@@ -1,5 +1,3 @@
-import './App.css'
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Home from './pages/Home/Home'
@@ -13,13 +11,15 @@ function App() {
     return (
         <BrowserRouter>
             <Header />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/work" element={<Work />} />
-                <Route path="/hobby" element={<Hobby />} />
-                <Route path="/socials" element={<Socials />} />
-                <Route path="/wall" element={<Wall />} />
-            </Routes>
+            <main>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/work" element={<Work />} />
+                    <Route path="/hobby" element={<Hobby />} />
+                    <Route path="/socials" element={<Socials />} />
+                    <Route path="/wall" element={<Wall />} />
+                </Routes>
+            </main>
         </BrowserRouter>
     )
 }

@@ -1,0 +1,15 @@
+@use '@/assets/styles/variables' as *;
+
+.link {
+    &--header {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    @media (min-width: $mobile-medium) {
+        &--header {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}

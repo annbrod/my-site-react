@@ -1,0 +1,32 @@
+// FONTS
+$font: 'Manrope';
+
+// DURATIONS
+$dur: var(--dur, 300ms);
+
+// Resolution
+$desktop-max: 3840px;
+$desktop-fullhd: 2560px;
+$desktop-big: 1920px;
+$desktop: 1440px;
+$laptop: 1280px;
+$desktop-min: 1024px;
+$tablet: 768px;
+$mobile-big: 425px;
+$mobile-medium: 375px;
+$mobile: 320px;
+
+// SCSS-переменные, использующие CSS-переменные
+$cl-white: var(--cl-white);
+$cl-black: var(--cl-black);
+$cl-nero: var(--cl-nero);
+$cl-solitude: var(--cl-solitude);
+$cl-ceramic: var(--cl-ceramic);
+
+$cl-txt-primary: var(--cl-azure);
+$cl-txt-accent: var(--cl-summer-green);
+$cl-link-primary: var(--cl-ceramic);
+$cl-link-hover: var(--cl-aromatic-kefirr);
+
+// COLORS - CONTENT
+$color-text: $cl-txt-primary;

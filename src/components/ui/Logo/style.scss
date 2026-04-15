@@ -1,0 +1,13 @@
+.logo {
+    display: block;
+    width: 46px;
+    flex-shrink: 0;
+
+    @media (min-width: $desktop-min) {
+        width: 96px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 144px;
+    }
+}

@@ -1,0 +1,19 @@
+.header {
+    @include container();
+    padding-block: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $cl-nero;
+    z-index: 10;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+}

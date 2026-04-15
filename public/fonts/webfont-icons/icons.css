@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "icons";
+    src: url("icons.eot?b46b1caec2d98ee68de1e726b1a19772?#iefix") format("embedded-opentype"),
+url("icons.woff2?b46b1caec2d98ee68de1e726b1a19772") format("woff2"),
+url("icons.woff?b46b1caec2d98ee68de1e726b1a19772") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.icon {
+    font-family: "icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+    content: "\f101";
+}
+.icon-arrow-left:before {
+    content: "\f102";
+}
+.icon-arrow-right:before {
+    content: "\f103";
+}
+.icon-burger:before {
+    content: "\f104";
+}
+.icon-check-filled:before {
+    content: "\f105";
+}
+.icon-check:before {
+    content: "\f106";
+}
+.icon-city:before {
+    content: "\f107";
+}
+.icon-close-2:before {
+    content: "\f108";
+}
+.icon-close:before {
+    content: "\f109";
+}
+.icon-company:before {
+    content: "\f10a";
+}
+.icon-download:before {
+    content: "\f10b";
+}
+.icon-download2:before {
+    content: "\f10c";
+}
+.icon-explore:before {
+    content: "\f10d";
+}
+.icon-headphones:before {
+    content: "\f10e";
+}
+.icon-info-circle:before {
+    content: "\f10f";
+}
+.icon-mail:before {
+    content: "\f110";
+}
+.icon-minus:before {
+    content: "\f111";
+}
+.icon-paperclip:before {
+    content: "\f112";
+}
+.icon-phone-big:before {
+    content: "\f113";
+}
+.icon-phone:before {
+    content: "\f114";
+}
+.icon-play:before {
+    content: "\f115";
+}
+.icon-plus:before {
+    content: "\f116";
+}
+.icon-resize-full:before {
+    content: "\f117";
+}
+.icon-search-2:before {
+    content: "\f118";
+}
+.icon-search:before {
+    content: "\f119";
+}
+.icon-share:before {
+    content: "\f11a";
+}
+.icon-sort:before {
+    content: "\f11b";
+}
+.icon-support:before {
+    content: "\f11c";
+}
+.icon-user:before {
+    content: "\f11d";
+}
+.icon-wallet:before {
+    content: "\f11e";
+}
+.icon-web:before {
+    content: "\f11f";
+}
