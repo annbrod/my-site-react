@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'icons';
+  font-family: '{{fontName}}';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-   src: url('icons.woff2') format('woff2');
+   src: url('{{basePath}}{{fontName}}.woff2') format('woff2');
 }
 
-.icon {
-    font-family: "icons";
+.{{baseClass}} {
+    font-family: "{{fontName}}";
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -17,9 +17,8 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-burger:before {
-    content: "\f101";
+{{#each codepoints}}
+.{{../classPrefix}}-{{@key}}:before {
+    content: "\\{{this}}";
 }
-.icon-close:before {
-    content: "\f102";
-}
+{{/each}}

@@ -16,6 +16,7 @@ export default defineConfig({
                 additionalData: `@use "@/assets/styles/_normalize.scss" as *;
                 @use "@/assets/styles/_variables.scss" as *;
                 @use "@/assets/styles/_mixins.scss" as *;
+                @use "@/assets/styles/_icons.scss" as *;
                 `,
             },
         },

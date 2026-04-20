@@ -1,0 +1,23 @@
+.navigation {
+    display: flex;
+
+    &--burger {
+        flex-direction: column;
+    }
+
+    @media (min-width: $tablet) {
+        gap: 16px;
+        width: calc(100% - 46px * 2 - 16px);
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (min-width: $desktop-min) {
+        gap: 32px;
+        width: calc(100% - 96px * 2 - 16px);
+    }
+
+    @media (min-width: $desktop) {
+        width: calc(100% - 114px * 2 - 16px);
+    }
+}

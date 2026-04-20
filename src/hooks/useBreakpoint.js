@@ -26,5 +26,7 @@ export function useBreakpoint() {
         isMobile: width < BREAKPOINTS.tablet,
         isTablet: width >= BREAKPOINTS.tablet && width < BREAKPOINTS.desktop,
         isDesktop: width >= BREAKPOINTS.desktop,
+        greaterThanTablet: width >= BREAKPOINTS.desktop,
+        greaterThanDesktop: width >= BREAKPOINTS.desktopMedium,
     }
 }

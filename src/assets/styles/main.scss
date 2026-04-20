@@ -28,7 +28,7 @@
 }
 
 html {
-    background-color: $cl-nero;
+    background-color: $background;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -65,11 +65,22 @@ body {
 }
 
 main {
-    flex: 1 0 auto;
     position: relative;
     width: 100%;
 
-    padding-top: 65px;
+    padding-top: 72px;
+
+    @media (min-width: $tablet) {
+        padding-top: 61px;
+    }
+
+    @media (min-width: $desktop-min) {
+        padding-top: 90px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 100px;
+    }
 }
 
 p {
@@ -256,6 +267,8 @@ a {
     --cl-solitude: #e5eaf2;
     --cl-summer-green: #84e1a5;
     --cl-aromatic-kefirr: #5fa56d;
+    --cl-baltic-sea: #2c2c30;
+    --cl-light-drab: #947549;
 
     --container-padding: 16px;
 
@@ -264,6 +277,6 @@ a {
     }
 
     @media (min-width: $desktop-min) {
-        --container-padding: 32px;
+        --container-padding: 36px;
     }
 }

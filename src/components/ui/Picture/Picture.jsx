@@ -1,6 +1,14 @@
-function Picture({ img, loadingLazy = true, highFetchPriority = false }) {
+import './style.scss'
+
+function Picture({
+    img,
+    classMod,
+    loadingLazy = true,
+    highFetchPriority = false,
+    ref,
+}) {
     return (
-        <picture>
+        <picture className={`${classMod || ''}`} ref={ref}>
             {img?.srcsets?.length &&
                 img.srcsets.map((source, idx) =>
                     source?.srcset ? (

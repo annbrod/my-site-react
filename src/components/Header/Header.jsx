@@ -1,28 +1,18 @@
 import './style.scss'
-import { Link } from 'react-router-dom'
+import { useBreakpoint } from '../../hooks/useBreakpoint'
 import Logo from '../ui/Logo/Logo'
+import Navigation from '../Navigation/Navigation'
+import Burger from '../Burger/Burger'
 
 function Header() {
+    const { isMobile } = useBreakpoint()
     return (
         <header className="header">
-            <Logo img="/images/inhtml/logo-light.svg" />
-            <nav className="header__nav">
-                <Link className="link link--header" to="/">
-                    Главная
-                </Link>
-                <Link className="link link--header" to="/work">
-                    Работа
-                </Link>
-                <Link className="link link--header" to="/hobby">
-                    Хобби
-                </Link>
-                <Link className="link link--header" to="/socials">
-                    Соцсети
-                </Link>
-                <Link className="link link--header" to="/wall">
-                    Стена
-                </Link>
-            </nav>
+            <div className="header__inner">
+                <Logo img="/images/inhtml/logo-light.svg" />
+
+                {isMobile ? <Burger /> : <Navigation />}
+            </div>
         </header>
     )
 }

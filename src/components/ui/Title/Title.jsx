@@ -1,3 +1,5 @@
+import './style.scss'
+
 function Title({ tag = 'h1', text, classMod }) {
     const Tag = tag
 

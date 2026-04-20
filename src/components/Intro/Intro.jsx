@@ -7,6 +7,7 @@ function Intro({ intro }) {
         <section className="intro">
             <div className="intro__image">
                 <Picture
+                    classMod="intro__picture"
                     img={{
                         src: intro.img.src,
                         alt: intro.img.alt,

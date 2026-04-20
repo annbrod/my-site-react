@@ -1,0 +1,23 @@
+.icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: none;
+    outline: none;
+    padding: 5px;
+    color: $cl-white;
+    background-color: transparent;
+
+    &--burger {
+        @media not all and (pointer: coarse) {
+            &:hover {
+                color: $cl-link-hover;
+            }
+        }
+
+        &:active {
+            color: $cl-link-hover;
+        }
+    }
+}
