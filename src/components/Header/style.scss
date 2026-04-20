@@ -3,8 +3,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    // background-color: $cl-baltic-sea;
     z-index: 10;
+    border-radius: 0 0 24px 24px;
+    transition:
+        background-color $dur ease,
+        box-shadow $dur ease;
+
+    &--scrolled {
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
     &__inner {
         @include container();
@@ -24,5 +33,9 @@
         &__nav {
             gap: 16px;
         }
+    }
+
+    @media (min-width: $desktop) {
+        border-radius: 0 0 32px 32px;
     }
 }

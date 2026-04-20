@@ -13,6 +13,7 @@ function Burger() {
     const [isOpen, setIsOpen] = useState(false)
     const toggleBurger = () => {
         setIsOpen((prev) => !prev)
+        window.document.documentElement.classList.toggle('no-scroll', !isOpen)
     }
     const location = useLocation()
 

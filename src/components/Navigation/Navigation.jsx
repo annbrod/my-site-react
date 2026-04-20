@@ -8,10 +8,13 @@ function Navigation({ classMod }) {
                 Главная
             </Link>
             <Link classMod="link--header" to="/work">
-                Работа
+                Работаю
             </Link>
-            <Link classMod="link--header" to="/hobby">
-                Хобби
+            <Link classMod="link--header" to="/write">
+                Пишу
+            </Link>
+            <Link classMod="link--header" to="/read">
+                Читаю
             </Link>
             <Link classMod="link--header" to="/socials">
                 Соцсети
