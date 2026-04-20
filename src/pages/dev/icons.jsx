@@ -10,9 +10,25 @@ import '../../../public/fonts/webfont-icons/icons.css'
 const IconsPage = () => {
     return (
         <div className="dev-icons-page">
-            <h1>Сгенерированные иконки (2 шт.)</h1>
+            <h1>Сгенерированные иконки (7 шт.)</h1>
             <div className="icons-grid">
                 
+            <div className="icon-card" key="write">
+                <i className="icon icon-write"></i>
+                <span className="icon-name">write</span>
+            </div>
+            <div className="icon-card" key="notebook">
+                <i className="icon icon-notebook"></i>
+                <span className="icon-name">notebook</span>
+            </div>
+            <div className="icon-card" key="message">
+                <i className="icon icon-message"></i>
+                <span className="icon-name">message</span>
+            </div>
+            <div className="icon-card" key="learn">
+                <i className="icon icon-learn"></i>
+                <span className="icon-name">learn</span>
+            </div>
             <div className="icon-card" key="close">
                 <i className="icon icon-close"></i>
                 <span className="icon-name">close</span>
@@ -20,6 +36,10 @@ const IconsPage = () => {
             <div className="icon-card" key="burger">
                 <i className="icon icon-burger"></i>
                 <span className="icon-name">burger</span>
+            </div>
+            <div className="icon-card" key="books">
+                <i className="icon icon-books"></i>
+                <span className="icon-name">books</span>
             </div>
             </div>
         </div>

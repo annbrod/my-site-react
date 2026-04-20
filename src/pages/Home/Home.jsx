@@ -1,10 +1,8 @@
-import { useBreakpoint } from '../../hooks/useBreakpoint'
 import Intro from '../../components/Intro/Intro'
 import MainBlock from '../../components/MainBlock/MainBlock'
+import IntroList from '../../components/IntroList/IntroList'
 
 function Home() {
-    // const { isMobile } = useBreakpoint()
-    // return <h1>{isMobile ? 'Главная мобильная' : 'Главная'}</h1>
     const mainBlock = {
         img: {
             src: '/images/content/main-block/background-mobile.webp',
@@ -53,10 +51,46 @@ function Home() {
             Donec in odio ac nisl efficitur efficitur. Donec eget nunc sed enim efficitur convallis. Donec in odio ac nisl efficitur efficitur.
         </p>`,
     }
+    const introList = {
+        title: 'Заголовок',
+        list: [
+            {
+                title: 'Заголовок 1',
+                description:
+                    'lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit auctor dui, a efficitur ligula.',
+                icon: 'learn',
+            },
+            {
+                title: 'Заголовок 2',
+                description:
+                    'lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit auctor dui, a efficitur ligula.',
+                icon: 'notebook',
+            },
+            {
+                title: 'Заголовок 3',
+                description:
+                    'lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit auctor dui, a efficitur ligula.',
+                icon: 'write',
+            },
+            {
+                title: 'Заголовок 4',
+                description:
+                    'lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit auctor dui, a efficitur ligula.',
+                icon: 'books',
+            },
+            {
+                title: 'Заголовок 5',
+                description:
+                    'lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit auctor dui, a efficitur ligula.',
+                icon: 'message',
+            },
+        ],
+    }
     return (
         <div>
-            <MainBlock mainBlock={mainBlock} />
-            <Intro intro={intro} />
+            {/* <MainBlock mainBlock={mainBlock} />
+            <Intro intro={intro} /> */}
+            <IntroList introList={introList} />
         </div>
     )
 }

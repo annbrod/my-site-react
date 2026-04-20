@@ -1,0 +1,9 @@
+.intro-list {
+    @include container();
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+}

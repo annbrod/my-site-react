@@ -17,9 +17,24 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-burger:before {
+.icon-books:before {
     content: "\f101";
 }
-.icon-close:before {
+.icon-burger:before {
     content: "\f102";
+}
+.icon-close:before {
+    content: "\f103";
+}
+.icon-learn:before {
+    content: "\f104";
+}
+.icon-message:before {
+    content: "\f105";
+}
+.icon-notebook:before {
+    content: "\f106";
+}
+.icon-write:before {
+    content: "\f107";
 }

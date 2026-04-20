@@ -1,0 +1,19 @@
+.intro-card {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 16px;
+    padding: 16px;
+    border-radius: 12px;
+
+    &:nth-child(3n + 1) {
+        background-color: $cl-suva-gray;
+    }
+
+    &:nth-child(3n + 2) {
+        background-color: $cl-og-107;
+    }
+
+    &:nth-child(3n + 3) {
+        background-color: $cl-pale-taupe;
+    }
+}
