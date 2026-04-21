@@ -31,6 +31,18 @@
         width: 100%;
         max-width: 900px;
         z-index: 1;
+        overflow: hidden;
+
+        img {
+            transform: translateY(100%);
+            transition:
+                transform $long-dur ease,
+                opacity $long-dur ease;
+
+            .preloader-hidden & {
+                transform: translateY(0);
+            }
+        }
     }
 
     @media (min-width: $tablet) {
@@ -44,6 +56,18 @@
         .main-block__parallax-2 {
             position: absolute;
             filter: drop-shadow(2px 4px 6px rgba(184, 180, 180, 0.5));
+
+            img {
+                opacity: 0;
+                transform: translateY(-10px);
+                transition:
+                    transform $long-dur ease,
+                    opacity $long-dur ease;
+                .preloader-hidden & {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
         }
 
         .main-block__parallax-2 {

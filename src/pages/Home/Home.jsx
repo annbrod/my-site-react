@@ -1,8 +1,11 @@
-import Intro from '../../components/Intro/Intro'
-import MainBlock from '../../components/MainBlock/MainBlock'
-import IntroList from '../../components/IntroList/IntroList'
+import { useState } from 'react'
+import Intro from '@/components/Intro/Intro'
+import MainBlock from '@/components/MainBlock/MainBlock'
+import IntroList from '@/components/IntroList/IntroList'
+import Preloader from '@/components/Preloader/Preloader'
 
 function Home() {
+    const [isLoaded, setIsLoaded] = useState(false)
     const mainBlock = {
         img: {
             src: '/images/content/main-block/background-mobile.webp',
@@ -120,11 +123,12 @@ function Home() {
         ],
     }
     return (
-        <div>
+        <>
+            {!isLoaded && <Preloader onFinish={() => setIsLoaded(true)} />}
             <MainBlock mainBlock={mainBlock} />
             <Intro intro={intro} />
             <IntroList introList={introList} />
-        </div>
+        </>
     )
 }
 

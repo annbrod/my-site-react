@@ -21,6 +21,12 @@
         display: flex;
         align-items: center;
         gap: 8px;
+        transform: translateY(-100%);
+        transition: transform $double-dur $long-dur ease;
+
+        .preloader-hidden & {
+            transform: translateY(0);
+        }
     }
 
     &__nav {
