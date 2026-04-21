@@ -41,55 +41,88 @@ function Home() {
             width: 800,
             height: 600,
         },
-        title: 'Имя Фамилия',
+        title: 'Привет! Я Туласова Анастасия',
         description: `<p>
-            lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Donec suscipit auctor dui, a efficitur ligula. Donec eget nunc sed enim efficitur convallis. 
+           alissa.volya — мой ник во многих социальных сетях и творческий псевдоним. Его мне придумал ChatGPT, пока я скучала в аэропорту. А теперь по нему меня узнают в интернете многие творческие люди и читатели.
         </p>
         <p>
-            Donec eget nunc sed enim efficitur convallis. 
-            Donec in odio ac nisl efficitur efficitur. Donec eget nunc sed enim efficitur convallis. Donec in odio ac nisl efficitur efficitur.
+            Я разработала этот сайт, чтобы продемонстрировать свои знания в области веб-разработки, а заодно рассказать о своих крутых увлечениях.
         </p>`,
     }
     const introList = {
-        title: 'Заголовок',
+        title: 'Коротко обо мне',
         list: [
             {
-                title: 'Заголовок 1',
-                description:
-                    'lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit auctor dui, a efficitur ligula.',
+                title: 'У меня два высших образования',
+                description: `Я лингвист-переводчик, а второй мой диплом — по специальности «Реклама и связи с общественностью». Кстати, оба диплома — красные. 
+                    Несмотря на то, что я работаю не по специальности, считаю, что оба направления здорово помогают мне в жизни, работе и творчестве.`,
                 icon: 'learn',
+                img: {
+                    src: '/images/content/intro-list/learn.webp',
+                    alt: 'education',
+                    width: 300,
+                    height: 300,
+                },
             },
             {
-                title: 'Заголовок 2',
+                title: '6+ лет я работаю в IT',
                 description:
-                    'lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit auctor dui, a efficitur ligula.',
+                    'Я frontend-разработчик. Люблю свою работу и считаю ее невероятно творческой. До сих пор не могу назвать себя «технарем».',
                 icon: 'notebook',
+                link: '/work',
+                img: {
+                    src: '/images/content/intro-list/notebook.webp',
+                    alt: 'notebook',
+                    width: 300,
+                    height: 300,
+                },
             },
             {
-                title: 'Заголовок 3',
-                description:
-                    'lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit auctor dui, a efficitur ligula.',
+                title: 'А еще я пишу',
+                description: `У меня есть несколько работ в фанфикшене, а также первая собственная книга, которую я выкладываю в сеть прямо в процессе.
+                    Есть еще несколько идей, но не хочу раскрывать все карты сразу!
+                    `,
                 icon: 'write',
+                link: '/write',
+                img: {
+                    src: '/images/content/intro-list/write.webp',
+                    alt: 'write',
+                    width: 300,
+                    height: 300,
+                },
             },
             {
-                title: 'Заголовок 4',
+                title: 'Читаю, когда есть свободное время',
                 description:
-                    'lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit auctor dui, a efficitur ligula.',
+                    'Люблю разные жанры, от классики до фэнтези. Больше люблю бумажные книги, потому что устаю от экранов за работой и письмом.',
                 icon: 'books',
+                link: '/read',
+                img: {
+                    src: '/images/content/intro-list/books.webp',
+                    alt: 'books',
+                    width: 300,
+                    height: 300,
+                },
             },
             {
-                title: 'Заголовок 5',
+                title: 'Я в социальных сетях',
                 description:
-                    'lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit auctor dui, a efficitur ligula.',
+                    'У меня есть настоящий тематический блог и даже пара-тройка сотен подписчиков :) А еще — личный аккаунт, в котором я просто делюсь своей жизнью.',
                 icon: 'message',
+                link: '/socials',
+                img: {
+                    src: '/images/content/intro-list/like.webp',
+                    alt: 'like',
+                    width: 300,
+                    height: 300,
+                },
             },
         ],
     }
     return (
         <div>
-            {/* <MainBlock mainBlock={mainBlock} />
-            <Intro intro={intro} /> */}
+            <MainBlock mainBlock={mainBlock} />
+            <Intro intro={intro} />
             <IntroList introList={introList} />
         </div>
     )

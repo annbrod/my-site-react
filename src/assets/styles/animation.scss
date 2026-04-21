@@ -1,0 +1,13 @@
+@use '@/assets/styles/variables' as *;
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all $long-dur ease;
+    transition-delay: 0.2s;
+}
+
+.fade-in.animate {
+    opacity: 1;
+    transform: translateY(0);
+}

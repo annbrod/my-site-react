@@ -1,9 +1,23 @@
 .intro-list {
     @include container();
+    padding-block: 48px;
 
     &__list {
         display: flex;
         flex-direction: column;
         row-gap: 16px;
+    }
+
+    @media (min-width: $tablet) {
+        padding-block: 56px;
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+    }
+
+    @media (min-width: $desktop-min) {
+        padding-block: 64px;
     }
 }

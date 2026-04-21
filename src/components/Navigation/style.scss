@@ -16,8 +16,4 @@
         gap: 32px;
         width: calc(100% - 96px * 2 - 16px);
     }
-
-    @media (min-width: $desktop) {
-        width: calc(100% - 114px * 2 - 16px);
-    }
 }

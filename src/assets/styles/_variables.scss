@@ -3,6 +3,8 @@ $font: 'Manrope';
 
 // DURATIONS
 $dur: var(--dur, 300ms);
+$double-dur: var(--dur, 600ms);
+$long-dur: var(--dur, 1200ms);
 
 // Resolution
 $desktop-max: 3840px;

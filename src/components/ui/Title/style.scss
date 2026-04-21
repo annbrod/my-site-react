@@ -1,12 +1,6 @@
 .title {
     font-weight: 700;
 
-    &--main {
-        margin-bottom: 12px;
-        font-size: 18px;
-        line-height: 24px;
-    }
-
     &--h1 {
         font-size: 32px;
         line-height: 40px;
@@ -14,8 +8,8 @@
     }
 
     &--h2 {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 28px;
+        line-height: 36px;
         margin-bottom: 16px;
     }
 
@@ -23,5 +17,29 @@
         font-size: 20px;
         line-height: 28px;
         margin-bottom: 12px;
+    }
+
+    @media (min-width: $tablet) {
+        &--h2 {
+            font-size: 30px;
+            line-height: 38px;
+        }
+    }
+
+    @media (min-width: $laptop) {
+        &--h1 {
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        &--h2 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        &--h3 {
+            font-size: 22px;
+            line-height: 30px;
+        }
     }
 }

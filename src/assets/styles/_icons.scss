@@ -7,4 +7,9 @@
     font-style: normal;
     font-size: 30px;
     transition: color $dur ease;
+
+    &--intro-card {
+        flex-shrink: 0;
+        font-size: 48px;
+    }
 }

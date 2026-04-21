@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import useFadeInObserver from '@/hooks/useObserver'
 
 import Home from './pages/Home/Home'
 import Work from './pages/Work/Work'
@@ -9,6 +10,7 @@ import Wall from './pages/Wall/Wall'
 import Header from './components/Header/Header'
 
 function App() {
+    useFadeInObserver()
     return (
         <BrowserRouter>
             <Header />

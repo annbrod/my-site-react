@@ -5,7 +5,7 @@ import Title from '../../components/ui/Title/Title'
 function Intro({ intro }) {
     return (
         <section className="intro">
-            <div className="intro__image">
+            <div className="intro__image fade-in">
                 <Picture
                     classMod="intro__picture"
                     img={{
@@ -16,10 +16,10 @@ function Intro({ intro }) {
                     }}
                 />
             </div>
-            <div className="intro__about">
-                <Title classMod="title--main" text={intro.title} />
+            <div className="intro__about ">
+                <Title classMod="title--h1 fade-in" text={intro.title} />
                 <div
-                    className="intro__description"
+                    className="intro__description fade-in"
                     dangerouslySetInnerHTML={{ __html: intro.description }}
                 />
             </div>

@@ -1,9 +1,31 @@
 .intro-card {
-    display: flex;
-    align-items: flex-start;
-    column-gap: 16px;
-    padding: 16px;
+    padding: 16px 16px 120px 16px;
     border-radius: 12px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+            270deg,
+            rgba(#000000, 0.3) 10%,
+            transparent 100%
+        );
+
+        opacity: 0;
+        transition: opacity $double-dur ease;
+    }
+
+    & > * {
+        position: relative;
+        z-index: 1;
+    }
 
     &:nth-child(3n + 1) {
         background-color: $cl-suva-gray;
@@ -15,5 +37,75 @@
 
     &:nth-child(3n + 3) {
         background-color: $cl-pale-taupe;
+    }
+
+    &__picture {
+        position: absolute;
+        bottom: -70px;
+        right: -13px;
+        transform: rotate(15deg);
+        transition: transform $double-dur ease;
+        width: 200px;
+        z-index: 2;
+    }
+
+    @media not all and (pointer: coarse) {
+        &:hover {
+            color: $color-text;
+
+            &::after {
+                opacity: 1;
+            }
+
+            .intro-card__picture {
+                transform: rotate(7deg) scale(1.2);
+            }
+        }
+    }
+
+    @media (min-width: $tablet) {
+        padding: 24px 24px 120px 24px;
+        &:nth-child(5n + 1) {
+            grid-row: span 2;
+            min-height: 240px;
+        }
+
+        &:nth-child(5n + 3) {
+            grid-row: span 2;
+        }
+
+        &:nth-child(5n + 4) {
+            background-color: $cl-og-107;
+        }
+
+        &:nth-child(5n + 5) {
+            grid-row: span 1;
+            grid-column: span 2;
+            background-color: $cl-suva-gray;
+
+            .intro-card__description {
+                max-width: 700px;
+            }
+        }
+
+        &__picture {
+            bottom: -52px;
+        }
+    }
+
+    @media (min-width: $desktop-min) {
+        padding: 32px 32px 120px 32px;
+
+        &__picture {
+            bottom: -52px;
+        }
+    }
+
+    @media (min-width: $laptop) {
+        min-height: 240px;
+
+        &:nth-child(5n + 1) {
+            min-height: 320px;
+        }
     }
 }
