@@ -3,8 +3,19 @@ import { useEffect } from 'react'
 function useFadeInObserver() {
     useEffect(() => {
         const elements = document.querySelectorAll('.fade-in')
-
         if (!elements.length) return
+
+        const checkVisibility = () => {
+            elements.forEach((el) => {
+                const rect = el.getBoundingClientRect()
+                const windowHeight = window.innerHeight
+                if (rect.top < windowHeight) {
+                    el.classList.add('animate')
+                }
+            })
+        }
+
+        checkVisibility()
 
         const observer = new IntersectionObserver(
             (entries) => {
@@ -20,10 +31,13 @@ function useFadeInObserver() {
             },
         )
 
-        elements.forEach((el) => observer.observe(el))
+        elements.forEach((el) => {
+            if (!el.classList.contains('animate')) {
+                observer.observe(el)
+            }
+        })
 
         return () => observer.disconnect()
     }, [])
 }
-
 export default useFadeInObserver

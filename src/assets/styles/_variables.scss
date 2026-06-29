@@ -1,5 +1,6 @@
 // FONTS
-$font: 'Manrope';
+$font: 'Ysa';
+$font-dirtyline: 'Dirtyline';
 
 // DURATIONS
 $dur: var(--dur, 300ms);
@@ -27,13 +28,18 @@ $cl-ceramic: var(--cl-ceramic);
 
 $cl-txt-primary: var(--cl-azure);
 $cl-txt-accent: var(--cl-summer-green);
-$cl-link-primary: var(--cl-ceramic);
-$cl-link-hover: var(--cl-light-drab);
+
 $cl-baltic-sea: var(--cl-baltic-sea);
 $cl-og-107: var(--cl-og-107);
 $cl-pale-taupe: var(--cl-pale-taupe);
 $cl-suva-gray: var(--cl-suva-gray);
+$cl-luxury-black: var(--cl-luxury-black);
+$cl-text-primary: var(--cl-text-primary);
+$cl-text-secondary: var(--cl-text-secondary);
+$cl-accent-pink: var(--cl-accent-pink);
+$cl-accent-green: var(--cl-accent-green);
+$cl-accent-blue: var(--cl-accent-blue);
 
 // COLORS - CONTENT
-$color-text: $cl-txt-primary;
-$background: $cl-baltic-sea;
+$color-text: $cl-text-primary;
+$background: $cl-luxury-black;

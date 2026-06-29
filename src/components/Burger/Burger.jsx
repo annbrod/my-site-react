@@ -30,7 +30,7 @@ function Burger() {
             />
             <div className="burger__inner">
                 <div className="burger__top">
-                    <Logo img="/images/inhtml/logo-light.svg" />
+                    <Logo img="/images/inhtml/logo-cyber.svg" />
                     <IconButton
                         name="close"
                         classMod="icon-button--burger"

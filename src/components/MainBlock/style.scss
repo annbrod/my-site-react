@@ -12,10 +12,10 @@
 
     &__background {
         position: absolute;
-        inset: 0;
+        // inset: 0;
         width: 100%;
-        height: 100%;
-        z-index: -1;
+        // height: 100%;
+        // z-index: -1;
 
         img {
             width: 100%;
@@ -55,7 +55,16 @@
         .main-block__parallax-1,
         .main-block__parallax-2 {
             position: absolute;
-            filter: drop-shadow(2px 4px 6px rgba(184, 180, 180, 0.5));
+
+            mask-image: url('/images/inhtml/mask1.svg');
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center top;
+            
+            -webkit-mask-image: url('/images/inhtml/mask1.svg');
+            -webkit-mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center top;
 
             img {
                 opacity: 0;

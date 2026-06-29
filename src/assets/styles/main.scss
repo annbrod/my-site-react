@@ -68,6 +68,7 @@ body {
 main {
     position: relative;
     width: 100%;
+    overflow: hidden;
 
     padding-top: 72px;
 
@@ -243,14 +244,13 @@ select:-webkit-autofill:focus {
 
 a {
     font-weight: 500;
-    color: $cl-link-primary;
-
+    color: $cl-text-primary;
     text-decoration: none;
     transition: color $dur;
 
     @media not all and (pointer: coarse) {
         &:hover {
-            color: $cl-link-hover;
+            color: $cl-accent-green;
         }
     }
 
@@ -266,6 +266,14 @@ a {
     --cl-azure: #fdfefe;
     --cl-ceramic: #fefefe;
     --cl-solitude: #e5eaf2;
+
+    --cl-luxury-black: #060d0d;
+    --cl-text-primary: #F4F7F7;
+    --cl-text-secondary: #9BA5A5;
+
+    --cl-accent-pink: #FF5E97;
+    --cl-accent-green: #00E5A3;
+    --cl-accent-blue: #2F80ED;
 
     --cl-summer-green: #84e1a5;
     --cl-aromatic-kefirr: #5fa56d;

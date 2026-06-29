@@ -1,5 +1,8 @@
+import EmptyYet from '@/components/EmptyYet/EmptyYet'
 function Socials() {
-  return <h1>Социальные сети</h1>
+    return (
+        <EmptyYet />
+    )
 }
 
 export default Socials

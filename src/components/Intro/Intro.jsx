@@ -15,9 +15,12 @@ function Intro({ intro }) {
                         height: intro.img.height,
                     }}
                 />
+                <img class="intro__emodji intro__emodji--1" src="/images/inhtml/emodji.svg" alt="" width="60" height="60" />
+                <img class="intro__emodji intro__emodji--2" src="/images/inhtml/heart.svg" alt="" width="60" height="60" />
+                <img class="intro__emodji intro__emodji--3" src="/images/inhtml/flash.svg" alt="" width="60" height="60" />
             </div>
             <div className="intro__about ">
-                <Title classMod="title--h1 fade-in" text={intro.title} />
+                <Title tag="h2" classMod="title--h1 fade-in" text={intro.title} />
                 <div
                     className="intro__description fade-in"
                     dangerouslySetInnerHTML={{ __html: intro.description }}

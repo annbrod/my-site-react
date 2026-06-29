@@ -1,5 +1,8 @@
+import EmptyYet from '@/components/EmptyYet/EmptyYet'
 function Wall() {
-  return <h1>Стена</h1>
+    return (
+        <EmptyYet />
+    )
 }
 
 export default Wall

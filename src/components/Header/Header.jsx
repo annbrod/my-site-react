@@ -19,7 +19,7 @@ function Header() {
     return (
         <header className={clsx('header', { 'header--scrolled': isScrolled })}>
             <div className="header__inner">
-                <Logo img="/images/inhtml/logo-light.svg" />
+                <Logo img="/images/inhtml/logo-cyber.svg" />
 
                 {isMobile ? <Burger /> : <Navigation />}
             </div>

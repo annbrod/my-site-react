@@ -47,6 +47,7 @@
         transition: transform $double-dur ease;
         width: 200px;
         z-index: 2;
+        filter: saturate(0.5);
     }
 
     @media not all and (pointer: coarse) {

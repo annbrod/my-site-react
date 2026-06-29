@@ -24,6 +24,16 @@ function MainBlock({ mainBlock }) {
                 'transform',
                 `translate(0px, ${scrollY * 0.3}px)`,
             )
+
+            parallax1Ref.current?.style.setProperty(
+                'transform',
+                `translate(0px, ${scrollY * -0.05}px)`,
+            )
+
+             parallax2Ref.current?.style.setProperty(
+                'transform',
+                `translate(0px, ${scrollY * -0.02}px)`,
+            )
         }
 
         const handleMouseMove = (e) => {
@@ -34,15 +44,15 @@ function MainBlock({ mainBlock }) {
                 `translate(${x * -20}px, ${y * -20}px)`,
             )
 
-            parallax1Ref.current?.style.setProperty(
-                'transform',
-                `translate(${x * -7}px, ${y * 8}px)`,
-            )
+            // parallax1Ref.current?.style.setProperty(
+            //     'transform',
+            //     `translate(${x * -7}px, ${y * 8}px)`,
+            // )
 
-            parallax2Ref.current?.style.setProperty(
-                'transform',
-                `translate(${x * 5}px, ${y * 5}px)`,
-            )
+            // parallax2Ref.current?.style.setProperty(
+            //     'transform',
+            //     `translate(${x * 5}px, ${y * 5}px)`,
+            // )
         }
 
         wrap.addEventListener('mousemove', handleMouseMove)

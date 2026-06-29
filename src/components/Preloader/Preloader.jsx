@@ -25,7 +25,7 @@ function Preloader({ onFinish }) {
         <div className={clsx('preloader', { 'preloader--hidden': isHidden })}>
             <div className="preloader__logo">
                 <img
-                    src="/images/inhtml/logo.svg"
+                    src="/images/inhtml/logo-cyber.svg"
                     alt="logo"
                     width={140}
                     height={140}

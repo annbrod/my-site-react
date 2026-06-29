@@ -1,5 +1,8 @@
+import EmptyYet from '@/components/EmptyYet/EmptyYet'
 function Work() {
-  return <h1>Работа</h1>
+    return (
+        <EmptyYet />
+    )
 }
 
 export default Work

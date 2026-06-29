@@ -19,11 +19,6 @@
     height: auto;
     position: relative;
 
-    img {
-        filter: invert(50%) sepia(7%) saturate(2865%) hue-rotate(356deg)
-            brightness(92%) contrast(78%);
-    }
-
     &:after {
         content: '';
         position: absolute;

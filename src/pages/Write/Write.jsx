@@ -1,5 +1,8 @@
+import EmptyYet from '@/components/EmptyYet/EmptyYet'
 function Write() {
-    return <h1>Увлечения</h1>
+    return (
+        <EmptyYet />
+    )
 }
 
 export default Write

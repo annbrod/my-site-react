@@ -12,12 +12,12 @@
     &--burger {
         @media not all and (pointer: coarse) {
             &:hover {
-                color: $cl-link-hover;
+                color: $cl-accent-blue;
             }
         }
 
         &:active {
-            color: $cl-link-hover;
+           color: $cl-accent-blue;
         }
     }
 }

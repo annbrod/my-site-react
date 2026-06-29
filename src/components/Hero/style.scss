@@ -1,0 +1,46 @@
+.hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+
+    background: $background;
+
+    &__title {
+        font-family: $font-dirtyline;
+        padding-bottom: 92px;
+        font-size: 82px;
+        line-height: 1.2;
+        text-shadow: 0px 4px 2px $cl-accent-green,
+            4px 0px 8px $cl-accent-pink;
+
+        &-wrap {
+            display: block;
+            overflow: hidden;
+
+            &+ .hero__title-wrap {
+                text-indent: 2em;
+
+                &+ .hero__title-wrap {
+                    text-indent: 4em;
+                }
+            }
+
+            &>span {
+                display: block;
+                transform: translateY(100%);
+                
+            }
+        }
+    }
+
+
+    @supports (height: 100svh) {
+        height: 100svh;
+    }
+   
+}

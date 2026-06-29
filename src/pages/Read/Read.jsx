@@ -1,5 +1,9 @@
+
+import EmptyYet from '@/components/EmptyYet/EmptyYet'
 function Read() {
-    return <h1>Пишу</h1>
+    return (
+        <EmptyYet />
+    )
 }
 
 export default Read
